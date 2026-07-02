@@ -81,6 +81,8 @@
 
     .example-question{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 12px}
     .mini-title{font-weight:900;color:var(--accent);margin-bottom:5px}
+    .example-reaction{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:.35rem 0 .45rem}
+    .example-arrow{width:50px}
     .big-formula{font-size:1.22rem;font-weight:800}
     .question-box p{font-size:1.05rem;font-weight:700}
     @media(max-width:720px){
@@ -153,7 +155,7 @@
         </div>
         <div class="card example-box">
           <div class="mini-title">Example</div>
-          <p>For <span class="formula">A + B → C</span>:</p>
+          <div class="example-reaction"><span>For</span><span class="formula">A + B</span><span class="rxn-arrow example-arrow"><span class="formula klabel">k</span><span class="arrow">→</span></span><span class="formula">C</span><span>:</span></div>
           <p class="big-formula"><span class="formula">rate = kC<sub>A</sub>C<sub>B</sub></span></p>
         </div>
       </div>
